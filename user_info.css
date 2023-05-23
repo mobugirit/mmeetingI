@@ -1,0 +1,1028 @@
+/* w- */
+.w-button {
+  cursor: pointer;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+input {
+  font-family: Gowun Batang, sans-serif;
+}
+
+input[type="text"]::placeholder, input[type="number"]::placeholder {
+  color: #b1b1b1;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #FFB8B8;
+  outline: none;
+}
+
+input[type="text"]:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, .5) inset;
+	box-shadow: 0 0 0 1000px rgba(255, 255, 255, .5) inset;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* body */
+.body {
+  height: auto;
+  color: #000;
+  text-align: center;
+  font-family: Gowun Batang, sans-serif;
+  font-weight: 400;
+}
+
+.bodygradient {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(#ffdbe5, #fff);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+
+/* sheetDefault */
+.sheet {
+  width: 100%;
+}
+
+.progressbar {
+  width: 100%;
+  height: 15px;
+  background-color: #fff;
+  display: block;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  position: fixed;
+}
+
+.progress {
+  width: 10%;
+  height: 15px;
+  background-color: #ff9494;
+}
+
+.izunbox {
+  width: 100%;
+  height: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+
+  top: 15px;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  position:fixed
+}
+
+.izunbtn {
+  margin-left: 100px;
+}
+
+.izunimg {
+  width: 50px;
+  height: 40px;
+  margin-left: 0;
+  position: static;
+  left: 0;
+}
+
+.questionbox {
+  margin-top: 95px;
+
+  width: 100%;
+  height: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.questiontextm {
+  margin-top: 34px;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.answerbox {
+  height: 380px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.daumbtn {
+  width: 300px;
+  height: 47px;
+  color: #000;
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #d9d9d9;
+  border-radius: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+
+  cursor: default;
+}
+
+.daumbox {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+  position: static;
+  top: auto;
+  bottom: 40px;
+  left: 0%;
+  right: 0%;
+}
+
+/* sheet0 */
+.explanationbox {
+  width: 465px;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.explanationtext {
+  font-size: 17px;
+  line-height: 35px;
+}
+
+.zeroimage {
+  width: 230px;
+}
+
+/* sheet1 */
+.progress.progfirst {
+  width: 10%;
+}
+
+.answerbox.radioanswer {
+  height: 331px;
+  margin-top: 5px;
+}
+
+.mbtiresultbox {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.mbtiresult {
+  width: 44px;
+  height: 44px;
+  background-color: #ffb8b8;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: Judson, sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  display: flex;
+}
+
+.mbtiradioline {
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  display: flex;
+}
+
+.mbtiradioDiv {
+  margin-left: 16px;
+  margin-right: 16px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.mbtiradioinput {
+  width: 44px;
+  height: 44px;
+  border: 3px solid #d7d7d7;
+  border-radius: 10px;
+  margin: 0;
+  
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.mbtiradio {
+  width: 27.2px;
+  height: 27.2px;
+  border: 3px solid #d7d7d7;
+  border-radius: 10px;
+}
+
+.mbtiradioinput:hover+.mbtiradio,
+.mbtiradioinput:checked+.mbtiradio,
+.mbtiradioinput:focus+.mbtiradio {
+  background-color: #FFB8B8;
+  border-color: #FFB8B8;
+}
+
+.mbtiradiotext {
+  width: 30px;
+  height: 47px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 44px;
+  line-height: 44px;
+}
+
+/* sheet2 */
+.progress.progsecond {
+  width: 20%;
+}
+
+.questiontextm.questiontexttwin {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.questiontexts {
+  margin-top: 8px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.allselectbox {
+  width: 100%;
+  height: 90px;
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+}
+
+.hopembtibox {
+  width: 100%;
+  height: 260px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hopembtigrid {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.hopembtibtn {
+  width: 76.8px;
+  height: 20.8px;
+  color: #000;
+  background-color: rgba(255, 255, 255, .5);
+  border: 2px solid #d4d4d4;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+}
+
+.hopembtibtn.allselectbtn {
+  width: 96.8px;
+  margin-left: 320px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.hopembtibtn:hover {
+  background-color: #FFB8B8;
+  border-color: #FFB8B8;
+}
+
+/* sheet3 */
+.progress.progthird {
+  width: 30%;
+}
+
+.image {
+  width: 230px;
+}
+
+.sexbtnbox {
+  width: 100%;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+}
+
+.sexbtn {
+  width: 130px;
+  height: 90px;
+  color: #000;
+  background-color: rgba(255, 255, 255, .5);
+  border: 3px solid #d9d9d9;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 27px;
+  line-height: 27px;
+  display: flex;
+}
+
+.sexbtn:hover {
+  background-color: #ffB8B8;
+  border-color: #FFB8B8;
+}
+
+.profilebox {
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 140px;
+  display: flex;
+  position: absolute;
+}
+
+.profileImg {
+  width: 110px;
+  height: 120px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.profileMbti {
+  width: 94px;
+  height: 33px;
+  text-align: center;
+  letter-spacing: 9px;
+  background-color: rgba(255, 184, 184, .5);
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 190px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 23px;
+  display: flex;
+  position: absolute;
+}
+
+/* sheet4 */
+.progress.progfourth {
+  width: 40%;
+}
+
+.nameinputbox {
+  width: 100%;
+  height: 75px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.nameinput {
+  width: 265px;
+  height: 75px;
+  color: black;
+  background-color: rgba(255, 255, 255, .5) !important;
+  border: 3px solid #d9d9d9;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+}
+
+.text {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.textballoon {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 210px;
+  display: flex;
+  position: absolute;
+}
+
+.balloontextdiv {
+  width: 103px;
+  height: 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  margin-left: 2px;
+  display: flex;
+  position: absolute;
+}
+
+/* sheet5 */
+.progress.progfifth {
+  width: 50%;
+}
+
+.textballoons {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 150px;
+  display: flex;
+  position: absolute;
+}
+
+.balloons {
+  width: 90px;
+  height: auto;
+}
+
+.textballoondivs {
+  width: 80px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  display: flex;
+  position: absolute;
+}
+
+.texts {
+  width: 80px;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-size: 13px;
+  line-height: 13px;
+  position: static;
+}
+
+input[type=range] {
+  
+  -webkit-appearance: none;
+  margin-top: 40px;
+  width: 350px;
+  background-color: transparent;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  
+  
+  background: rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  border: 2px solid #D6D6D6;
+}
+
+input[type=range]::-webkit-slider-thumb {
+
+
+  height: 27px;
+  width: 27px;
+  border-radius: 13px;
+  background: #FFB8B8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10.5px;
+}
+
+.ageResultBox {
+  width: 350px;
+  height: 30;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+.ageResult { 
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+.ageLimit {
+  font-size: 24px;
+  position : absolute;
+  margin-left: 322px;
+  color: #A6A6A6;
+}
+
+/* sheet6 */
+.progress.progsixth {
+  width: 60%;
+}
+
+.hopeagebox {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+}
+
+.hopeageinput {
+  width: 80.8px;
+  height: 46.8px;
+  color: black;
+  background-color: rgba(255, 255, 255, .5);
+  border: 2px solid #d9d9d9;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  text-align: center;
+
+  padding-top: 2px;
+}
+
+.hopeagetext {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.hopeagebox2 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+}
+
+/* sheet7 */
+.progress.progseventh {
+  width: 70%;
+}
+
+.answerbox.residenceanswerbox {
+  height: 440px;
+}
+
+.regionbox {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.regionbtn {
+  width: 47px;
+  height: 22px;
+  color: #000;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  margin-left: 13px;
+  margin-right: 13px;
+  font-size: 17px;
+  line-height: 17px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.residencegrid {
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+
+.residencebtn {
+  width: 77px;
+  height: 20.4px;
+  color: #000;
+  background-color: rgba(255, 255, 255, .5);
+  border: 1.5px solid #d4d4d4;
+  border-radius: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 19px;
+  line-height: 19px;
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 479px) {
+
+  /* body */
+  .bodygradient {
+  height: 250px;
+  }
+
+  /* sheetDefault */
+  .progressbar {
+    height: 10px;
+  }
+
+  .progress {
+    width: 10%;
+    height: 10px;
+  }
+
+  .izunimg {
+    width: 38px;
+    height: 31px;
+    margin-left: 0;
+  }
+
+  .izunbox {
+    top: 10px;
+
+    height: 80px;
+  }
+  
+  .izunbtn
+ {
+    margin-left: 30px;
+  }
+
+  .questionbox {
+    margin-top: 90px;
+
+    height: 150px;
+  }
+
+  .questiontextm {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .answerbox {
+    height: 350px;
+  }
+
+  .daumbtn {
+    width: 240px;
+    height: 42px;
+    font-size: 25px;
+  }
+
+  .daumbox {
+    margin-top: 10px;
+    position: static;
+    bottom: 30px;
+  }
+
+  /* sheet0 */
+  .explanationbox {
+    width: 337px;
+    height: 110px;
+  }
+
+  .explanationtext {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .zeroimage {
+    width: 216px;
+    height: 216px;
+    margin-top: 10px;
+  }
+
+  /* sheet1 */
+  .answerbox.radioanswer {
+    height: 294px;
+    margin-top: 0px;
+  }
+
+  .mbtiresultbox {
+    margin-bottom: 20px;
+  }
+
+  .mbtiresult {
+    width: 36px;
+    height: 36px;
+    font-size: 31px;
+    line-height: 31px;
+  }
+
+  .mbtiradioline {
+    margin-top: 25px;
+  }
+
+  .mbtiradioDiv {
+    margin-left: 12px;
+    margin-right: 12px;
+  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .mbtiradioinput {
+    width: 29px;
+    height: 29px;
+    margin: 0px;
+  }
+
+  .mbtiradio {
+    width: 20.2px;
+    height: 20.2px;
+  }
+
+  .mbtiradiotext {
+    width: 20px;
+    height: 34px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  /* sheet2 */
+  .questiontextm.questiontexttwin {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .questiontexts {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .allselectbox {
+    height: 60px;
+    margin-top: 5px;
+  }
+
+  .hopembtigrid {
+    grid-column-gap: 17px;
+    grid-row-gap: 17px;
+  }
+
+  .hopembtibtn {
+    width: 68.8px;
+    height: 14.8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .hopembtibtn.allselectbtn {
+    width: 99.8px;
+    margin-left: 250px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  /* sheet3 */
+  .sexbtnbox {
+    margin-top: 5px;
+  }
+
+  .sexbtn {
+    width: 122px;
+    height: 84px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+  }
+
+  .profilebox {
+    margin-top: 120px;
+  }
+
+  .profileImg {
+    width: 97px;
+    height: 104px;
+    margin-top: 40px;
+  }
+
+  .profileMbti {
+    width: 88px;
+    height: 27px;
+    letter-spacing: 7px;
+    align-items: center;
+    margin-top: 164px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  /* sheet4 */
+  .nameinputbox {
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .nameinput {
+    width: 252px;
+    height: 66px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .textballoon {
+    margin-left: 190px;
+  }
+
+  /* sheet5 */
+  .texts {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  
+  input[type=range] {
+    margin-top: 10px;
+    width: 300px;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 4px;
+    border: 1.5px solid #D6D6D6;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+  
+  
+    height: 24px;
+    width: 24px;
+    border-radius: 13px;
+    margin-top: -10.5px;
+  }
+  
+  .ageResultBox {
+    width: 300px;
+    height: 24;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+  }
+  
+  .ageResult { 
+    font-size: 20px;
+    margin-left: 2px;
+  }
+  
+  .ageLimit {
+    font-size: 20px;
+    margin-left: 277px;
+  }
+  
+
+  /* sheet6 */
+  .hopeagebox {
+    margin-top: 0;
+  }
+
+  .hopeageinput {
+    width: 72.8px;
+    height: 36.8px;
+  }
+
+  .hopeagetext {
+    margin-left: 8px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .hopeagebox2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* sheet7 */
+  .questionbox.residencequestion {
+    height: 90px;
+  }
+
+  .answerbox.residenceanswer {
+    height: 410px;
+  }
+
+  .regionbtn {
+    width: 39px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .residencegrid {
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .residencebtn {
+    width: 70px;
+    height: 14.4px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.ghost {
+  opacity: 0;
+}
+
+.BtnClicked {
+  background-color: #FFB8B8;
+  border-color: #FFB8B8;
+}
+
+.daumbtn.goDaum {
+  background-color: #ffB8B8;
+  border-color: #FFB8B8;
+  cursor: pointer;
+}

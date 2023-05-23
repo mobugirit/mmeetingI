@@ -1,0 +1,467 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--font import-->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Gowun Batang:regular,700:korean,latin", "Inter:300,regular", "Judson:regular,700"]
+      }
+    });
+  </script>
+
+  <link href="user_info.css" rel="stylesheet" />
+</head>
+
+<body class="body">
+  <div class="bodygradient">
+    <!-- sheet0 -->
+    <div class="sheet" id="sheet0">
+      <div class="progressbar">
+        <div class="progress"></div>
+      </div>
+      <div class="izunbox">
+        <a href="index.html" class="izunbtn" id="izun0">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm">프로필을 작성해 봅시다!</div>
+      </div>
+      <div class="answerbox">
+        <div class="explanationbox">
+          <div class="explanationtext">
+            소요시간은 <strong>약 2분</strong>
+            정도입니다<br />
+            프로필은 <strong>수정</strong>
+            이 가능합니다!<br />제출된 프로필로 매칭이 이루어지니 열심히 작성해 주세요!
+          </div>
+        </div>
+        <img
+          src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64592db185aa7e55d43c27e8_CherryBlossoms_01%201.svg"
+          loading="lazy" width="247" alt="" class="zeroimage" />
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button goDaum" id="daum0">다음으로 -&gt;️</a>
+      </div>
+    </div>
+    <!-- sheet1 -->
+    <div class="sheet hidden" id="sheet1">
+      <div class="progressbar">
+        <div class="progress progfirst"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn w-inline-block" id="izun1">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm">당신의 MBTI는 무엇인가요?</div>
+      </div>
+      <div class="mbtiresultbox">
+        <div class="mbtiresult" id="EIresult">?</div>
+        <div class="mbtiresult" id="SNresult">?</div>
+        <div class="mbtiresult" id="TFresult">?</div>
+        <div class="mbtiresult" id="JPresult">?</div>
+      </div>
+      <div class="answerbox radioanswer">
+        <div class="mbtiradioline">
+          <div class="mbtiradiotext">E</div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="EI" class="mbtiradioinput" value="oxxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="EI" class="mbtiradioinput" value="xoxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="EI" class="mbtiradioinput" value="xxoxx" checked>
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="EI" class="mbtiradioinput" value="xxxox">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="EI" class="mbtiradioinput" value="xxxxo">
+            <div class="mbtiradio"></div>
+          </div>
+
+          <div class="mbtiradiotext">I</div>
+        </div>
+        <div class="mbtiradioline">
+          <div class="mbtiradiotext">S</div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="SN" class="mbtiradioinput" value="oxxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="SN" class="mbtiradioinput" value="xoxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="SN" class="mbtiradioinput" value="xxoxx" checked>
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="SN" class="mbtiradioinput" value="xxxox">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="SN" class="mbtiradioinput" value="xxxxo">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradiotext">N</div>
+        </div>
+        <div class="mbtiradioline">
+          <div class="mbtiradiotext">T</div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="TF" class="mbtiradioinput" value="oxxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="TF" class="mbtiradioinput" value="xoxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="TF" class="mbtiradioinput" value="xxoxx" checked>
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="TF" class="mbtiradioinput" value="xxxox">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="TF" class="mbtiradioinput" value="xxxxo">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradiotext">F</div>
+        </div>
+        <div class="mbtiradioline">
+          <div class="mbtiradiotext">J</div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="JP" class="mbtiradioinput" value="oxxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="JP" class="mbtiradioinput" value="xoxxx">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="JP" class="mbtiradioinput" value="xxoxx" checked>
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="JP" class="mbtiradioinput" value="xxxox">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradioDiv">
+            <input type="radio" name="JP" class="mbtiradioinput" value="xxxxo">
+            <div class="mbtiradio"></div>
+          </div>
+          <div class="mbtiradiotext">P</div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum1">다음으로 -&gt;️</a>
+      </div>
+    </div>
+    <!-- sheet2 -->
+    <div class="sheet hidden" id="sheet2">
+      <div class="progressbar">
+        <div class="progress progsecond"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun2">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm questiontexttwin">원하는 상대방의 MBTI는 무엇인가요?</div>
+        <div class="questiontexts">여러개를 선택해주셔도 좋아요🙌🏻</div>
+      </div>
+      <div class="answerbox">
+        <div class="allselectbox">
+          <a href="#" class="hopembtibtn allselectbtn w-button">전체선택</a>
+        </div>
+        <div class="hopembtibox">
+          <div class="w-layout-grid hopembtigrid">
+            <a id="ISTJ" href="#" class="hopembtibtn w-button">ISTJ</a>
+            <a id="ISFJ" href="#" class="hopembtibtn w-button">ISFJ</a>
+            <a id="INFJ" href="#" class="hopembtibtn w-button">INFJ</a>
+            <a id="INTJ" href="#" class="hopembtibtn w-button">INTJ</a>
+            <a id="ISTP" href="#" class="hopembtibtn w-button">ISTP</a>
+            <a id="ISFP" href="#" class="hopembtibtn w-button">ISFP</a>
+            <a id="INFP" href="#" class="hopembtibtn w-button">INFP</a>
+            <a id="INTP" href="#" class="hopembtibtn w-button">INTP</a>
+            <a id="ESTP" href="#" class="hopembtibtn w-button">ESTP</a>
+            <a id="ESFP" href="#" class="hopembtibtn w-button">ESFP</a>
+            <a id="ENFP" href="#" class="hopembtibtn w-button">ENFP</a>
+            <a id="ENTP" href="#" class="hopembtibtn w-button">ENTP</a>
+            <a id="ESTJ" href="#" class="hopembtibtn w-button">ESTJ</a>
+            <a id="ESFJ" href="#" class="hopembtibtn w-button">ESFJ</a>
+            <a id="ENFJ" href="#" class="hopembtibtn w-button">ENFJ</a>
+            <a id="ENTJ" href="#" class="hopembtibtn w-button">ENTJ</a>
+          </div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum2">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet3 -->
+    <div class="sheet hidden" id="sheet3">
+      <div class="progressbar">
+        <div class="progress progthird"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun3">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm">성별은 무엇인가요?</div>
+      </div>
+      <div class="answerbox">
+        <div class="sexbtnbox">
+          <a href="#" class="sexbtn w-button" id="manBtn">남성</a>
+          <a href="#" class="sexbtn w-button" id="womanBtn">여성</a>
+        </div>
+        <div class="profilebox">
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
+            loading="lazy" alt="" class="profileImg ghost manImg" />
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
+            loading="lazy" alt="" class="profileImg ghost womanImg" />
+          <div class="profileMbti"></div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum3">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet4 -->
+    <div class="sheet hidden" id="sheet4">
+      <div class="progressbar">
+        <div class="progress progfourth"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun4">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm questiontexttwin">당신의 이름은 무엇인가요?</div>
+        <div class="questiontexts">닉네임으로 입력해주셔도 됩니다👋🏻</div>
+      </div>
+      <div class="answerbox">
+        <div class="nameinputbox">
+          <input type="text" class="nameinput" placeholder="ex) 강감찬" id="userNameInput" maxlength="6"></input>
+        </div>
+        <div class="profilebox">
+          <div class="textballoon"><img
+              src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a7c5c9219a346102df546_Union%20(1).svg"
+              loading="lazy" alt="" class="balloon" />
+            <div class="balloontextdiv">
+              <div class="text profileName">강감찬</div>
+            </div>
+          </div><img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
+            loading="lazy" alt="" class="profileImg ghost manImg" /><img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
+            loading="lazy" alt="" class="profileImg ghost womanImg" />
+          <div class="profileMbti"></div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum4">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet5 -->
+    <div class="sheet hidden" id="sheet5">
+      <div class="progressbar">
+        <div class="progress progfifth"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun5">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm questiontexttwin">나이는요?</div>
+        <div class="questiontexts">나이가 가까운 상대로 매칭해드려요!😘</div>
+      </div>
+      <div class="answerbox">
+        <input type="range" class="ageRange" min="20" max="35" step="1" value="20"></input>
+        <div class="ageResultBox">
+          <div class="ageResult">20</div>
+          <div class="ageLimit">35</div>
+        </div>
+        <div class="profilebox">
+          <div class="textballoon">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a7c5c9219a346102df546_Union%20(1).svg"
+              loading="lazy" alt="" class="balloon" />
+            <div class="balloontextdiv">
+              <div class="text profileAge">20살!</div>
+            </div>
+          </div>
+          <div class="textballoons">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/6466696703a9d87acb2d7c00_Union%20(2).svg"
+              loading="lazy" alt="" class="balloons" />
+            <div class="textballoondivs">
+              <div class="texts profileName"></div>
+            </div>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
+            loading="lazy" alt="" class="profileImg ghost manImg" /><img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
+            loading="lazy" alt="" class="profileImg ghost womanImg" />
+          <div class="profileMbti"></div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum5">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet6 -->
+    <div class="sheet hidden" id="sheet6">
+      <div class="progressbar">
+        <div class="progress progsixth"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun6">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox">
+        <div class="questiontextm questiontexttwin">원하는 상대방의 나이는요?</div>
+        <div class="questiontexts">원하는 나이대의 상대만 매칭해드려요! 😃</div>
+      </div>
+      <div class="answerbox">
+        <div class="hopeagebox">
+          <div class="hopeagebox2">
+            <input type="number" class="hopeageinput" placeholder="22" id="hopeAgeMinInput"></input>
+            <div class="hopeagetext">살 부터</div>
+          </div>
+          <div class="hopeagebox2">
+            <input type="number" class="hopeageinput" placeholder="26" id="hopeAgeMinInputNext"></input>
+            <div class="hopeagetext">살 까지</div>
+          </div>
+        </div>
+        <div class="profilebox">
+          <div class="textballoon">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a7c5c9219a346102df546_Union%20(1).svg"
+              loading="lazy" alt="" class="balloon" />
+            <div class="balloontextdiv">
+              <div class="text profileAge">20살!</div>
+            </div>
+          </div>
+          <div class="textballoons">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/6466696703a9d87acb2d7c00_Union%20(2).svg"
+              loading="lazy" alt="" class="balloons" />
+            <div class="textballoondivs">
+              <div class="texts profileName"></div>
+            </div>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
+            loading="lazy" alt="" class="profileImg ghost manImg" /><img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
+            loading="lazy" alt="" class="profileImg ghost womanImg" />
+          <div class="profileMbti"></div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum6">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet7 -->
+    <div class="sheet hidden" id="sheet7">
+      <div class="progressbar">
+        <div class="progress progseventh"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun7">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox residencequestion">
+        <div class="questiontextm questiontexttwin">거주지는 어디인가요?</div>
+        <div class="questiontexts">가까운 상대로 매칭해드릴게요👀</div>
+      </div>
+      <div class="answerbox residenceanswer">
+        <div class="regionbox">
+          <a href="#" class="regionbtn w-button">서울</a>
+          <a href="#" class="regionbtn w-button">경기</a>
+          <a href="#" class="regionbtn w-button">인천</a>
+        </div>
+        <div class="w-layout-grid residencegrid">
+          <a id="" href="#" class="residencebtn w-button">강남구</a>
+          <a id="" href="#" class="residencebtn w-button">강동구</a>
+          <a id="" href="#" class="residencebtn w-button">강북구</a>
+          <a id="" href="#" class="residencebtn w-button">강서구</a>
+          <a id="" href="#" class="residencebtn w-button">관악구</a>
+          <a id="" href="#" class="residencebtn w-button">광진구</a>
+          <a id="" href="#" class="residencebtn w-button">구로구</a>
+          <a id="" href="#" class="residencebtn w-button">금천구</a>
+          <a id="" href="#" class="residencebtn w-button">노원구</a>
+          <a id="" href="#" class="residencebtn w-button">도봉구</a>
+          <a id="" href="#" class="residencebtn w-button">동대문구</a>
+          <a id="" href="#" class="residencebtn w-button">동작구</a>
+          <a id="" href="#" class="residencebtn w-button">마포구</a>
+          <a id="" href="#" class="residencebtn w-button">서대문구</a>
+          <a id="" href="#" class="residencebtn w-button">서초구</a>
+          <a id="" href="#" class="residencebtn w-button">성동구</a>
+          <a id="" href="#" class="residencebtn w-button">성북구</a>
+          <a id="" href="#" class="residencebtn w-button">송파구</a>
+          <a id="" href="#" class="residencebtn w-button">양천구</a>
+          <a id="" href="#" class="residencebtn w-button">영등포구</a>
+          <a id="" href="#" class="residencebtn w-button">용산구</a>
+          <a id="" href="#" class="residencebtn w-button">은평구</a>
+          <a id="" href="#" class="residencebtn w-button">종로구</a>
+          <a id="" href="#" class="residencebtn w-button">중구</a>
+          <a id="" href="#" class="residencebtn w-button">중랑구</a>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum7">다음으로 -&gt;️</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="user_info_js/imsydaum.js"></script>
+  <script src="user_info_js/sheet1.js"></script>
+  <script src="user_info_js/sheet2.js"></script>
+  <script src="user_info_js/sheet3.js"></script>
+  <script src="user_info_js/sheet4.js"></script>
+  <script src="user_info_js/sheet5.js"></script>
+  <script src="user_info_js/sheet6.js"></script>
+</body>
+
+</html>
