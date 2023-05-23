@@ -667,6 +667,22 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 40px;
 }
 
+.residenceradioDiv {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.residenceradio {
+  border-radius: 0;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 .residencebtn {
   width: 77px;
   height: 20.4px;
@@ -679,10 +695,16 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 19px;
   line-height: 19px;
 
-  cursor: pointer;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+.residenceradio:hover+.residencebtn,
+.residenceradio:checked+.residencebtn,
+.residenceradio:focus+.residencebtn {
+  background-color: #FFB8B8;
+  border-color: #FFB8B8;
 }
 
 /* 미디어쿼리 */
@@ -844,6 +866,11 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 21px;
   }
 
+  .hopembtibtn:hover {
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid #d4d4d4;
+  }
+
   .hopembtibtn.allselectbtn {
     width: 99.8px;
     margin-left: 250px;
@@ -996,6 +1023,11 @@ input[type=range]::-webkit-slider-thumb {
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
+  }
+
+  .residenceradio {
+    width: 70px;
+    height: 20px;
   }
 
   .residencebtn {
