@@ -1,11 +1,10 @@
 // 기능 1. input 작성 후 blur -> userName 저장 및 profileNameWrite
 // 기능 2. userName.length > 0 이면 다음 가능
+// 기능 3. input 에서 enter 누르면 blur
 
 const userNameInput = document.querySelector("#userNameInput");
 const profileName = document.querySelectorAll(".profileName");
 let userName = "";
-
-const daum4 = document.querySelector("#daum4");
 
 function noDaum4() {
   daum4.classList.remove(GODAUM_CLASS);
@@ -37,4 +36,11 @@ function profileNameWrite(event) {
   }
 }
 
+function thisBlur(event) {
+  if(event.keyCode === 13){
+    event.target.blur();
+  }
+}
+
+//userNameInput.onkeydown = thisBlur;
 userNameInput.addEventListener("blur", profileNameWrite);

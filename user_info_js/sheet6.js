@@ -8,12 +8,6 @@ const hopeAgeMaxInput = document.querySelector("#hopeAgeMinInputNext");
 let hopeAgeMin = 0;
 let hopeAgeMax = 0;
 
-function thisBlur(event) {
-  if(event.keyCode === 13){
-    event.target.blur();
-  }
-}
-
 function focusNext(event) {
   if (event.keyCode === 13){
     const next = document.querySelector(`#${event.target.id}Next`);
@@ -26,8 +20,6 @@ hopeAgeMaxInput.onkeydown = thisBlur;
 
 let goMin = false;
 let goMax = false;
-
-const daum6 = document.querySelector("#daum6");
 
 function onDaum6Click(event){ 
   event.preventDefault();

@@ -2,7 +2,6 @@
 // 기능 2. radio를 한번이라도 click해야 다음가능
 // 기능 3. 다음 클릭 시 profileMbti 저장 및 표시
 const radioInputs = document.querySelectorAll(".mbtiradioinput");
-const daum1 = document.querySelector("#daum1");
 
 const GODAUM_CLASS = "goDaum"
 
@@ -34,6 +33,7 @@ function goDaum1(){
 
 radioInputs.forEach((radio)=>{
   radio.addEventListener("click",function() {
+    
     const resultId = this.name + "result";
     const result = document.querySelector(`#${resultId}`);
 

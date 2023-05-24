@@ -6,11 +6,10 @@ let windowWidth = window.matchMedia("screen and (min-width: 479px)");
 
 const userAgeInput = document.querySelector(".ageRange");
 const ageResult = document.querySelector(".ageResult");
-const profileAge = document.querySelectorAll(".profileAge");
+const profileAge = document.querySelectorAll(".text.profileAge");
+const profileAgeS = document.querySelectorAll(".texts.profileAge")
 const ageLimit = document.querySelector(".ageLimit");
 let userAge = 0;
-
-const daum5 = document.querySelector("#daum5");
 
 function onDaum5Click(event){ 
   event.preventDefault();
@@ -40,6 +39,9 @@ function paintAge() {
 
   profileAge.forEach((item)=>{
     item.innerText = `${userAge}살!`;
+  })
+  profileAgeS.forEach((item)=>{
+    item.innerText = `${userAge}살`;
   })
 
   ageLimit.classList.add(HIDDEN_CLASS);

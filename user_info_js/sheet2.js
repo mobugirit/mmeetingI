@@ -5,7 +5,6 @@
 let hopeMbtis = [];
 
 const HOPEMBTI_CLICKED = "BtnClicked"
-const daum2 = document.querySelector("#daum2");
 
 function noDaum2(){
   daum2.classList.remove(GODAUM_CLASS);

@@ -3,8 +3,6 @@
 // 기능 3. sexBtn click 해야 다음가능
 let userSex = 0;
 
-const daum3 = document.querySelector("#daum3");
-
 const manBtn = document.querySelector("#manBtn");
 const womanBtn = document.querySelector("#womanBtn");
 const profileImgMan = document.querySelectorAll(".manImg");

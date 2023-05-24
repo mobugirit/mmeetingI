@@ -470,7 +470,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
 }
 
-.balloontextdiv {
+.textballoondiv {
   width: 103px;
   height: 36px;
   flex-direction: column;
@@ -497,8 +497,8 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
 }
 
-.balloons {
-  width: 90px;
+.balloon {
+  width: auto;
   height: auto;
 }
 
@@ -706,6 +706,51 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #FFB8B8;
   border-color: #FFB8B8;
 }
+
+/* sheet8 */
+.progress.progeighth {
+  width: 80%;
+}
+
+.textballoons.textballoons1 {
+  width: 81px;
+  height: 34px;
+  margin-top: 10px;
+  margin-right: 120px;
+}
+
+.textballoondivs.textballoondivs1 {
+  margin-bottom: 9px;
+  margin-right: 1px;
+}
+
+.textballoons.textballoons2 {
+  width: 59px;
+  height: 28px;
+  margin-top: 50px;
+  margin-right: 165px;
+}
+
+.textballoondivs.textballoondivs2 {
+  width: 53px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.textballoons.textballoons3 {
+  width: 67px;
+  height: 25px;
+  margin-top: 95px;
+  margin-right: 185px;
+}
+
+.textballoondivs.textballoondivs3 {
+  width: 52px;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+
 
 /* 미디어쿼리 */
 @media screen and (max-width: 479px) {
