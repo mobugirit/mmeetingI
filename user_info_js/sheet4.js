@@ -42,5 +42,5 @@ function thisBlur(event) {
   }
 }
 
-//userNameInput.onkeydown = thisBlur;
+userNameInput.onkeydown = thisBlur;
 userNameInput.addEventListener("blur", profileNameWrite);
