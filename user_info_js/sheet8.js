@@ -6,7 +6,7 @@ const userUnivInput = document.querySelector("#userUnivInput");
 const profileUniv = document.querySelectorAll(".profileUniv");
 let userUniv = "";
 
-function noDaum4() {
+function noDaum8() {
   daum8.classList.remove(GODAUM_CLASS);
   daum8.onclick = "";
 }
@@ -14,7 +14,7 @@ function noDaum4() {
 function onDaum8Click(event){ 
   event.preventDefault();
   sheet8.classList.add(HIDDEN_CLASS);
-  //sheet9.classList.remove(HIDDEN_CLASS);
+  sheet9.classList.remove(HIDDEN_CLASS);
 }
 
 function goDaum8() {

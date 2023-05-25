@@ -320,14 +320,14 @@
         <div class="profilebox">
           <div class="textballoon">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a7c5c9219a346102df546_Union%20(1).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondiv">
               <div class="text profileAge">20살!</div>
             </div>
           </div>
           <div class="textballoons">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/6466696703a9d87acb2d7c00_Union%20(2).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondivs">
               <div class="texts profileName"></div>
             </div>
@@ -374,14 +374,14 @@
         <div class="profilebox">
           <div class="textballoon">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a7c5c9219a346102df546_Union%20(1).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondiv">
               <div class="text profileAge">20살!</div>
             </div>
           </div>
           <div class="textballoons">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/6466696703a9d87acb2d7c00_Union%20(2).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondivs">
               <div class="texts profileName"></div>
             </div>
@@ -551,37 +551,37 @@
         <div class="profilebox">
           <div class="textballoon univballoon">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646d862e82afbb5ac602ce7f_Union%20(9).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondiv univballoondiv">
               <div class="text univtext profileUniv">서울대학교</div>
             </div>
           </div>
           <div class="textballoons textballoons1">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646d62953c1f2268edf52e6e_Union%20(3).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondivs textballoondivs1">
-              <div class="texts profileNmae">세종대왕말이</div>
+              <div class="texts profileName"></div>
             </div>
           </div>
           <div class="textballoons textballoons2">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a81eb097c6d6bedfd8730_Union%20(2).svg"
-              loading="lazy"/>
+              loading="lazy" />
             <div class="textballoondivs textballoondivs2">
-              <div class="texts profileAge">24살</div>
+              <div class="texts profileAge"></div>
             </div>
           </div>
           <div class="textballoons textballoons3">
             <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646d6975e328562148c3d6f8_Union%20(6).svg"
               loading="lazy" alt="" class="image-3" />
             <div class="textballoondivs textballoondivs3">
-              <div class="texts profileResidence">동대문구</div>
+              <div class="texts profileResidence"></div>
             </div>
           </div>
           <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
-            loading="lazy" alt="" class="profileImg" />
+            loading="lazy" alt="" class="profileImg  ghost manImg" />
           <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
-            loading="lazy" alt="" class="profileImg" />
-          <div class="profileMbti">ENTJ</div>
+            loading="lazy" alt="" class="profileImg  ghost womanImg" />
+          <div class="profileMbti"></div>
         </div>
       </div>
       <div class="daumbox">
@@ -590,13 +590,15 @@
     </div>
 
     <!-- sheet9 -->
-    <div class="sheet" id="sheet9">
+    <div class="sheet hidden" id="sheet9">
       <div class="progressbar progninth">
         <div class="process procninth"></div>
       </div>
       <div class="izunbox">
-        <a href="#" class="izunbtn">
-          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg" loading="lazy" alt="" class="izunimg"/>
+        <a href="#" class="izunbtn" id="izun9">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
         </a>
       </div>
       <div class="questionbox introducequestion">
@@ -604,17 +606,132 @@
         <div class="questiontexts">상대방한테 전송되는 정보에요</div>
       </div>
       <div class="answerbox introduceanswer">
-          <div class="introduceinput">
-              ex) 저는 기타 연주가 취미이고 ... <br/>
-          </div>
-          <div class="introlengthbox">
-              <div class="introlength">0 / 150 자</div>
-          </div>
+        <div class="introBox">
+          <textarea class="introduceinput" placeholder="ex) 저는 기타 연주가 취미이고 ... " maxlength="150"></textarea>
+
+          <div class="introlength">0 / 150 자</div>
+        </div>
       </div>
       <div class="daumbox">
-          <a href="#" class="daumbtn w-button">다음으로 -&gt;️</a>
+        <a href="#" class="daumbtn w-button" id="daum9">다음으로 -&gt;️</a>
       </div>
-  </div>
+    </div>
+
+    <!-- sheet10 -->
+    <div class="sheet hidden" id="sheet10">
+      <div class="progressbar">
+        <div class="progress progtenth"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun10">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="questionbox kakaoquestion">
+        <div class="questiontextm questiontexttwin kakaoquestiontext">카카오톡 ID를 알려주세요</div>
+        <div class="questiontexts kakaoquestiontexts">매칭이 되면 알람을 보내드려요!</div>
+        <input type="text" class="kakaoinput" maxlength="20" id="userKakaoID"></input>
+      </div>
+      <div class="kakaomargin"></div>
+      <div class="questionbox kakaoquestion kakaoquestion2">
+        <div class="questiontextm questiontexttwin kakaoquestiontext">비밀번호를 설정해주세요</div>
+        <div class="questiontexts kakaoquestiontexts">매칭을 확인하기 위함입니다</div>
+        <input type="password" class="kakaoinput" maxlength="20" id="userKakaoIDNext"></input>
+      </div>
+      <div class="answerbox kakaoanswer">
+        <div class="profilebox kakaoprofile">
+          <div class="textballoonLast">
+            <img
+              src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646daf443625840e9f670b0e_Union%20(12).svg"
+              loading="lazy" />
+            <div class="textballoondivLast">
+              <div class="text textLast">마지막입니다!</div>
+            </div>
+          </div>
+          <div class="textballoons textballoons1">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646d62953c1f2268edf52e6e_Union%20(3).svg"
+              loading="lazy" />
+            <div class="textballoondivs textballoondivs1">
+              <div class="texts profileName"></div>
+            </div>
+          </div>
+          <div class="textballoons textballoons2">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a81eb097c6d6bedfd8730_Union%20(2).svg"
+              loading="lazy" />
+            <div class="textballoondivs textballoondivs2">
+              <div class="texts profileAge"></div>
+            </div>
+          </div>
+          <div class="textballoons textballoons3">
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646d6975e328562148c3d6f8_Union%20(6).svg"
+              loading="lazy" alt="" class="image-3" />
+            <div class="textballoondivs textballoondivs3">
+              <div class="texts profileResidence"></div>
+            </div>
+          </div>
+          <div class="textballoons textballoons4">
+            <img
+              src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646dac87933b939f7e4ee2e7_Union%20(11).svg"
+              loading="lazy" alt="" />
+            <div class="textballoondivs textballoondivs4">
+              <div class="texts univtexts profileUniv"></div>
+            </div>
+          </div>
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645a13f9ef4207df09dcfde6_Group%2072.svg"
+            loading="lazy" alt="" class="profileImg manImg" />
+          <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/64663da575c4eb839e42e74e_Group%2071.svg"
+            loading="lazy" alt="" class="profileImg ghost womanImg" />
+          <div class="profileMbti"></div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button" id="daum10">다음으로 -&gt;️</a>
+      </div>
+    </div>
+
+    <!-- sheet11 -->
+    <div class="sheet " id="sheet11">
+      <div class="progressbar">
+        <div class="progress progtenth"></div>
+      </div>
+      <div class="izunbox">
+        <a href="#" class="izunbtn" id="izun11">
+          <img
+            src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/645924d3eaab7f6f28e18c35_%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-05-08%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.30%201.svg"
+            loading="lazy" alt="" class="izunimg" />
+        </a>
+      </div>
+      <div class="lastquestionboxb">
+        <div class="lastquestiontextBM">신청이 완료되었어요!</div>
+        <div class="lastquestiontextBS">매칭이 성사되면 안내해드릴게요😊</div>
+      </div>
+      <div class="lastMargin"></div>
+      <div class="lastquestionboxs">
+        <div class="lastquestiontexts">매칭이 진행되면 매칭 진행 의사와 함께</div>
+        <div class="lastquestiontexts">결제를 진행하고 있습니다.</div>
+      </div>
+      <div class="answerbox lastanswer">
+        <div class="paynoticebox">
+          <div class="paynotice" id="manPay">
+            <div class="paynoticesex">남성</div>
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646ec24ab4a048bfc0b943c2_Group%2075.svg"
+              loading="lazy" alt="" class="payNoticeImg" />
+            <div class="paynoticemoney">5000원</div>
+          </div>
+          <div class="paynotice" id="womanPay">
+            <div class="paynoticesex">여성</div>
+            <img src="https://uploads-ssl.webflow.com/645915ef85aa7ecdf03ab31e/646ec3ab071f90fbf5ca9fc5_Group%2078.svg"
+              loading="lazy" alt="" class="payNoticeImg" />
+            <div class="paynoticemoney">무료</div>
+          </div>
+        </div>
+      </div>
+      <div class="daumbox">
+        <a href="#" class="daumbtn w-button goDaum" id="submitBtn">프로필 생성 완료!</a>
+      </div>
+    </div>
   </div>
 
 
@@ -627,6 +744,8 @@
   <script src="user_info_js/sheet6.js"></script>
   <script src="user_info_js/sheet7.js"></script>
   <script src="user_info_js/sheet8.js"></script>
+  <script src="user_info_js/sheet9.js"></script>
+  <script src="user_info_js/sheet10.js"></script>
 </body>
 
 </html>
